@@ -22,8 +22,8 @@
       <td>{{ lecture.title }}</td>
       <td><a href="{{ lecture.pdf.url }}">{{ lecture.version }}</a></td>
       <td>
-	{% if lecture.youtube %}<a href="{{ lecture.youtube }}">Link{% if lecture.youtube2 %} 1{% endif %}</a>{% endif %}
-	{% if lecture.youtube2 %}<br><a href="{{ lecture.youtube2 }}">Link 2</a>{% endif %}
+	{% if lecture.youtube %}<a href="{{ lecture.youtube }}" target="_blank">Link{% if lecture.youtube2 %} 1{% endif %}</a>{% endif %}
+	{% if lecture.youtube2 %}<br><a href="{{ lecture.youtube2 }}" target="_blank">Link 2</a>{% endif %}
       </td>
     </tr>
   {% endfor %}
